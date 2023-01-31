@@ -15,29 +15,34 @@
         <h1>World Clocks</h1>
       </div>
 
-      <select name="countries-select" id="countries-select">
-        <option value="">Choose a city.</option>
-        <option value="los-angeles">Los Angeles</option>
-        <option value="sydney">Sydney</option>
-        <option value="tokyo">Tokyo</option>
-        <option value="paris">Paris</option>
-      </select>
-      <div class="city" id="los-angeles">
-        <div class="city-title">
-          <h2>Los Angeles</h2>
-          <div class="date"></div>
-        </div>
-        <div class="city-time">
-          <h3 class="time"></h3>
-        </div>
+      <div id="citySelect">
+        <select name="countries-select" id="countries-select">
+          <option value="">Choose a city.</option>
+          <option value="Europe/Stockholm">Stockholm</option>
+          <option value="Australia/Sydney">Sydney</option>
+          <option value="Asia/Tokyo">Tokyo</option>
+          <option value="America/New_York">New York</option>
+        </select>
       </div>
-      <div class="city" id="paris">
-        <div class="city-title">
-          <h2>Paris</h2>
-          <div class="date"></div>
+
+      <div id="cityData">
+        <div class="city" id="los-angeles">
+          <div class="city-title">
+            <h2>Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="city-time">
+            <h3 class="time"></h3>
+          </div>
         </div>
-        <div class="city-time">
-          <h3 class="time"></h3>
+        <div class="city" id="paris">
+          <div class="city-title">
+            <h2>Paris</h2>
+            <div class="date"></div>
+          </div>
+          <div class="city-time">
+            <h3 class="time"></h3>
+          </div>
         </div>
       </div>
     </div>
