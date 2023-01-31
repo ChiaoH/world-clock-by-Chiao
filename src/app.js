@@ -44,7 +44,9 @@ function showCityTime(event) {
             </small>
             </h3>
           </div>
-        </div>`;
+        </div>
+        <a href="/" id="backLink"> Back to all cities.</a>
+        `;
 }
 
 setInterval(upDateTime, 1000);
