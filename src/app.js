@@ -21,6 +21,16 @@ function upDateTime() {
   parisTimeElement.innerHTML = currentParisTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
+  //Bangkok//
+  let bangkokElement = document.querySelector("#bangkok");
+  let bangkokDateElement = bangkokElement.querySelector(".date");
+  let bangkokTimeElement = bangkokElement.querySelector(".time");
+  let currentBangkokTime = moment().tz("Asia/Bangkok");
+
+  bangkokDateElement.innerHTML = currentBangkokTime.format("MMMM D, YYYY");
+  bangkokTimeElement.innerHTML = currentBangkokTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 }
 
 function showCityTime(event) {
