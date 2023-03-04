@@ -1,4 +1,15 @@
 function upDateTime() {
+  //Lima//
+  let limaElement = document.querySelector("#lima");
+  let limaDateElement = limaElement.querySelector(".date");
+  let limaTimeElement = limaElement.querySelector(".time");
+  let currentLimaTime = moment().tz("America/Lima");
+
+  limaDateElement.innerHTML = currentLimaTime.format("MMMM D, YYYY");
+  limaTimeElement.innerHTML = currentLimaTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
+
   //Los Angeles//
   let losAngelesElement = document.querySelector("#los-angeles");
   let losAngelesDateElement = losAngelesElement.querySelector(".date");

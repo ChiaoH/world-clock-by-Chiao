@@ -1,6 +1,9 @@
 :root {
   --primary-font: "Playfair Display", serif;
   --secondary-font: "Josefin Sans", sans-serif;
+  --primary-color: #eacfc0;
+  --secondary-color: #343943ee;
+  --tertiary-color: #b23c38;
 }
 
 body {
@@ -8,7 +11,7 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   display: block;
   max-width: 400px;
   margin: 120px auto 20px auto;
@@ -24,6 +27,14 @@ select {
   width: 90%;
   padding: 5px;
   border-radius: 6px;
+  font-size: 16px;
+}
+
+#countries-select {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: var(--tertiary-color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-size: 14px;
 }
 
@@ -31,8 +42,8 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px dotted #3ea9bca6;
-  line-height: 24px;
+  border-bottom: 1px dotted var(--tertiary-color);
+  line-height: 10px;
 }
 
 .city-time {
@@ -50,18 +61,26 @@ select {
 
 .container h1 {
   font-family: var(--primary-font);
+  text-shadow: 0px 0px 10px var(--primary-color),
+    0px 0px 10px var(--tertiary-color);
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 35px;
 }
 
 .container h2,
 h3 {
   font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  text-shadow: 0px 0px 10px var(--primary-color), 0px 0px 10px white;
 }
 
 .container a {
   text-decoration: none;
 }
-.container a:hover {
-  color: ;
+
+.container a:visited {
+  color: var(--primary-color);
 }
 
 .date {
@@ -72,11 +91,19 @@ h3 {
 footer {
   text-align: center;
   font-size: 14px;
-  color: white;
+  margin-top: 20px;
+  color: var(--secondary-color);
+  text-shadow: 0 0 10px var(--tertiary-color);
   font-family: var(--secondary-font);
 }
 
 footer a {
   text-decoration: none;
-  color: aquamarine;
+  text-shadow: 0 0 10px var(--tertiary-color), 0 0 10px var(--tertiary-color);
+  color: var(--tertiary-color);
+  line-height: 1.5;
+}
+
+footer a:visited {
+  color: var(--tertiary-color);
 }
