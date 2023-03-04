@@ -1,14 +1,17 @@
+:root {
+  --primary-font: "Playfair Display", serif;
+  --secondary-font: "Josefin Sans", sans-serif;
+}
+
 body {
-  background-color: #f5f6f8;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url(images/city-night-time-lapse.jpg);
 }
 
 .container {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
   display: block;
   max-width: 400px;
-  margin: 60px auto 20px auto;
+  margin: 120px auto 20px auto;
   text-align: center;
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -45,20 +48,35 @@ select {
   border-bottom: none;
 }
 
-h2 {
-  margin: 0;
+.container h1 {
+  font-family: var(--primary-font);
+}
+
+.container h2,
+h3 {
+  font-family: var(--secondary-font);
+}
+
+.container a {
+  text-decoration: none;
+}
+.container a:hover {
+  color: ;
 }
 
 .date {
-  opacity: 0.6;
+  opacity: 0.8;
+  font-family: var(--secondary-font);
 }
 
 footer {
   text-align: center;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: var(--secondary-font);
 }
 
-a {
+footer a {
   text-decoration: none;
+  color: aquamarine;
 }
